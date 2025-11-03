@@ -1,7 +1,11 @@
-langchain==0.2.11
+streamlit
 python-dotenv
-ipykernel
+# Pinned core LangChain components for stability and to resolve import issues
+langchain==0.2.11
 langchain-community==0.0.36
+langchain-groq==0.1.6
+
+# Other dependencies from your original list (Cleaned of duplicates)
 pypdf
 bs4
 arxiv
@@ -16,11 +20,7 @@ langchain_chroma
 duckdb
 pandas
 openai
-langchain-groq==0.1.6
 duckduckgo-search
-pymupdf
-arxiv
-wikipedia
 mysql-connector-python
 SQLAlchemy
 validators==0.28.1
