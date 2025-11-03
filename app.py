@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langchain.chains import LLMMathChain, LLMChain
+from langchain.chains import LLMChain
+from langchain_community.chains import LLMMathChain
 from langchain.prompts import PromptTemplate
 from langchain_community.utilities import WikipediaAPIWrapper
 from langchain.agents.agent_types import AgentType
@@ -93,4 +94,5 @@ if st.button("Find my Answer"):
             st.write('###Response')
             st.success(response)
     else:
+
         st.error("Please enter a question")
